@@ -1,0 +1,144 @@
+@import "../../font/home.wxss";
+
+.index {
+  position: relative;
+}
+
+.backgroundImage {
+  height: 330rpx
+}
+
+.top {
+  padding-bottom: 50rpx;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.swiper {
+  padding-top: 20rpx;
+  margin: 0 4%;
+  position: relative;
+  width: 92%;
+  height: 270rpx;
+}
+
+.swiperImage {
+  width: 100%;
+  height: 270rpx;
+}
+
+.headerTitle {
+  position: relative;
+  z-index: 20;
+  color: #fff;
+  line-height: 50rpx;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  margin: 0 2%;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
+.indexIcon {
+  margin-right: 20rpx;
+  padding: 12rpx;
+  font-size: 32rpx;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-top: 20rpx;
+  text-align: center;
+}
+
+.buttonChild {
+  padding: 20rpx;
+  width: 320rpx;
+  border-radius: 10rpx;
+  background-image: linear-gradient(to right, #2ad6a4, #0fa97a);
+  color: #fff;
+}
+
+.buttonChild:active {
+  background-image: linear-gradient(to right, #0fa97a, #0fa97a);
+}
+
+.contentIndex {
+  position: relative;
+  margin: 30rpx 4% 0 4%;
+}
+
+.contentTitle {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
+.contentTitleLeft {
+  margin-right: 10rpx;
+  width: 16rpx;
+  border-radius: 40rpx;
+  background-color: #10ac7d;
+}
+
+.contentTitle {
+  font-weight: 600;
+}
+
+.row {
+  margin: 20rpx 3% 0 3%;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+
+.people {
+  position: absolute;
+  padding: 2rpx 10rpx;
+  top: 120rpx;
+  font-size: 24rpx;
+  color: #fff;
+  background-color: #19c594;
+  border-radius: 40rpx;
+}
+
+.contentTitle {
+  margin-top: 10rpx;
+  font-weight: 500;
+}
+
+.km {
+  font-size: 22rpx;
+  color: #bcbcbc;
+}

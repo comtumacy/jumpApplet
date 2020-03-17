@@ -1,0 +1,42 @@
+<!-- 主页 -->
+<wxs src="./index.wxs" module="indexWxs" />
+<view class="index">
+  <view class="top">
+    <image class="backgroundImage" src="{{backgroundImage}}"></image>
+    <swiper class="swiper" style="top: {{swiperHeight}}rpx" indicator-dots="true" autoplay="true" circular="true">
+      <swiper-item wx:for="{{swiperContent}}" wx:key="index" item-id="{{index}}">
+        <image class="swiperImage" src="{{swiperContent[index]}}"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="button">
+    <view class="buttonChild">{{buttonTitle}}</view>
+  </view>
+  <view class="contentIndex">
+    <view class="contentTitle">
+      <view class="contentTitleLeft"></view>
+      <view class="contentTitle">{{title}}</view>
+    </view>
+    <view class="row" wx:for="{{content.length / 3}}" wx:key="index">
+      <view class="col" bindtap="enter" data-appid="{{content[index * 3].appid}}">
+        <image src="{{content[index * 3].img}}"></image>
+        <view class="contentTitle">{{content[index * 3].title}}</view>
+        <view class="people">{{content[index * 3].numberOfPeople}}人气</view>
+        <view class="km">{{content[index * 3].km}}KM</view>
+      </view>
+      <view class="col" bindtap="enter" data-appid="{{content[index * 3 + 1].appid}}"  wx:if="{{indexWxs.judgementExists(content[index * 3 + 1].img) === '1'}}">
+        <image src="{{content[index * 3 + 1].img}}"></image>
+        <view class="contentTitle">{{content[index * 3 + 1].title}}</view>
+        <view class="people">{{content[index * 3 + 1].numberOfPeople}}人气</view>
+        <view class="km">{{content[index * 3 + 1].km}}KM</view>
+      </view>
+      <view class="col" bindtap="enter" data-appid="{{content[index * 3 + 2].appid}}" wx:if="{{indexWxs.judgementExists(content[index * 3 + 2].img) === '1'}}">
+        <image src="{{content[index * 3 + 2].img}}"></image>
+        <view class="contentTitle">{{content[index * 3 + 2].title}}</view>
+        <view class="people">{{content[index * 3 + 2].numberOfPeople}}人气</view>
+        <view class="km">{{content[index * 3 + 1].km}}KM</view>
+      </view>
+    </view>
+  </view>
+  <view style="height: 50rpx"></view>
+</view>
